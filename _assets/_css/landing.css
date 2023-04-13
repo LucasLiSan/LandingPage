@@ -23,38 +23,48 @@ body {
   align-items: center;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.subtitulo {
+  margin-top: -20px;
+  text-align: center;
+}
+
 .section:nth-child(odd) {
-  background: #ccc;
+  background: #fffafa;
 }
 
 .banner {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   height: 100vh;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 svg {
-  width: 130px;
-}
-
-circle {
+  height: 130px;
   fill: transparent;
-  stroke: orange;
   stroke-width: 10px;
   stroke-dasharray: 471;
   stroke-dashoffset: 0;
-  animation: clock-animation 5s linear infinite;
+  animation: clock-animation 6s linear infinite;
   animation-iteration-count: 1;
 }
 
 @keyframes clock-animation {
   0% {
     stroke-dashoffset: 471;
+  }
+  10% {
+    stroke: transparent;
   }
   100% {
     stroke-dashoffset: 0;
@@ -65,6 +75,8 @@ circle {
   font-size: 10rem;
   font-weight: 300;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
 }
 
 @keyframes fadeIn {
@@ -75,18 +87,17 @@ circle {
     opacity: 1;
   }
 }
+
 .fade-in {
   opacity: 0;
   animation: fadeIn ease-in 1;
   animation-fill-mode: forwards;
-  animation-duration: 1.4s;
+  animation-duration: 1s;
   font-size: 1.5rem;
-  margin: -13px;
-  padding: 0;
 }
 
 .fade-in.delayed {
-  animation-delay: 3s;
+  animation-delay: 1.7s;
 }
 
 /*.menu {
