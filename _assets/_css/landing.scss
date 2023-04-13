@@ -1,6 +1,6 @@
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 html {
@@ -33,61 +33,30 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
-}
 
-svg {
-  width: 130px;
-}
-
-circle {
-  fill: transparent;
-  stroke: orange;
-  stroke-width: 10px;
-  stroke-dasharray: 471;
-  stroke-dashoffset: 0;
-  animation: clock-animation 5s linear infinite;
-  animation-iteration-count: 1;
-}
-
-@keyframes clock-animation {
-  0% {
-    stroke-dashoffset: 471;
-  }
-  100% {
-    stroke-dashoffset: 0;
+  h1 {
+    font-size: 10rem;
+    font-weight: 300;
+    text-transform: uppercase;
   }
 }
 
-.banner h1 {
-  font-size: 10rem;
-  font-weight: 300;
-  text-transform: uppercase;
-}
+@keyframes fadeIn { from {opacity: 0;} to { opacity: 1;}}
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 .fade-in {
   opacity: 0;
   animation: fadeIn ease-in 1;
   animation-fill-mode: forwards;
   animation-duration: 1.4s;
-  font-size: 1.5rem;
-  margin: -13px;
-  padding: 0;
 }
 
 .fade-in.delayed {
-  animation-delay: 3s;
+  animation-delay: 1.4s;
 }
+
 
 /*.menu {
   position: absolute;
@@ -299,4 +268,4 @@ body img {
     background: #000;
     border: 10px solid #b98137;
     box-sizing: border-box;
-}*//*# sourceMappingURL=landing.css.map */
+}*/
