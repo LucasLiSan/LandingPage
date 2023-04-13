@@ -15,7 +15,6 @@ body {
   flex-wrap: wrap;
   font-family: "Montserrat";
   font-style: normal;
-  font-weight: 600;
 }
 
 .section {
@@ -47,6 +46,7 @@ body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  font-weight: 600;
 }
 
 svg {
