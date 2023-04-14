@@ -292,6 +292,135 @@ svg {
   transition-delay: 0.2s;
 }
 
+.card__collection .cards--two__rect {
+  width: 750px;
+  height: 200px;
+  background: #fff;
+  display: block;
+  position: absolute;
+  top: 175%;
+  left: -78%;
+  transform: rotate(30deg);
+  z-index: 5;
+  opacity: 0.9;
+  transition: all 0.3s ease-in-out;
+}
+
+.card__collection .cards--two__rect:before {
+  content: '';
+  display: block;
+  width: 100%;
+  position: relative;
+  height: 100%;
+  background: #f07306;
+  transform: translateY(200px);
+  z-index: 2;
+  transition: all 0.3s ease-in-out;
+  transition-delay: 0.1s;
+}
+
+.card__collection .cards--two ul {
+  list-style: none;
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  z-index: 9;
+}
+
+.card__collection .cards--two ul li {
+  display: inline-block;
+  font-size: 16px;
+  margin: 7px;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+  transform: translateY(100px);
+}
+
+.card__collection .cards--two ul li:nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+.card__collection .cards--two ul li:nth-child(3) {
+  transition-delay: 0.3s;
+}
+
+.card__collection .cards--two ul li:nth-child(4) {
+  transition-delay: 0.4s;
+}
+
+.card__collection .cards--three {
+  position: relative;
+  z-index: 10;
+}
+
+.card__collection .cards--three:hover .cards--three__rect-1 {
+  left: 10%;
+}
+
+.card__collection .cards--three:hover .cards--three__rect-1 .shadow-1 {
+  left: -20%;
+}
+
+.card__collection .cards--three:hover .cards--three__rect-2 {
+  left: 60%;
+}
+
+.card__collection .cards--three:hover .cards--three__rect-2:before {
+  left: -100%;
+}
+
+.card__collection .cards--three:hover .cards--three__rect-2:after {
+  left: 80%;
+}
+
+.card__collection .cards--three:hover .cards--three__rect-2 .shadow-2 {
+  left: -10%;
+}
+
+.card__collection .cards--three:hover .cards--three__circle {
+  transform: scale(1);
+}
+
+.card__collection .cards--three:hover .cards--three__circle:before {
+  transform: scale(0.9);
+}
+
+.card__collection .cards--three:hover .cards--three__list li {
+  transform: translateX(0);
+}
+
+.card__collection .cards--three__rect-1 {
+  background: #fff;
+  width: 200px;
+  height: 110px;
+  transform: skewX(-20deg);
+  display: block;
+  position: absolute;
+  top: 73%;
+  opacity: 0.9;
+  left: -100%;
+  z-index: 8;
+  transition: all 0.5s ease-in;
+}
+
+.card__collection .cards--three__rect-1 p {
+  font-size: 20px;
+  color: #fff;
+  transform: skewX(20deg);
+  line-height: 6rem;
+}
+
+.card__collection .cards--three__rect-1 .shadow-1 {
+  background: #9b1308;
+  width: 230px;
+  height: 100px;
+  display: block;
+  position: absolute;
+  left: -200%;
+  z-index: 1;
+  transition: all 0.3s ease-in;
+}
+
 /*.menu {
   position: absolute;
   display: flex;
