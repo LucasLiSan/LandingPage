@@ -3,7 +3,7 @@
 *:after {
   margin: 0;
   padding: 0;
-  box-sizing: border-box ;
+  box-sizing: border-box;
 }
 
 html {
@@ -18,6 +18,7 @@ body {
   flex-wrap: wrap;
   font-family: "Montserrat";
   font-style: normal;
+  height: 100vh;
 }
 
 .section {
@@ -38,8 +39,8 @@ body {
   text-align: center;
 }
 
-.section:nth-child(odd) {
-  background: #fffafa;
+.section:nth-child(even) {
+  background: #d4d4d4;
 }
 
 .banner {
@@ -106,7 +107,7 @@ svg {
 .clear-fix:after {
   display: block;
   clear: both;
-  content: '';
+  content: "";
 }
 
 .img-responsive {
@@ -118,6 +119,7 @@ svg {
   position: relative;
   display: block;
   padding: 10px;
+  overflow: hidden;
 }
 
 .card__collection .cards {
@@ -130,6 +132,11 @@ svg {
   position: relative;
   background-position: center;
   margin: 10px;
+  overflow: hidden;
+}
+
+.cards__list a {
+  color: #d4d4d4;
 }
 
 .card__collection .cards--one {
@@ -153,7 +160,7 @@ svg {
 }
 
 .card__collection .cards--one::after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   height: 70px;
@@ -169,14 +176,14 @@ svg {
 }
 
 .card__collection .cards--one:before {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   height: 80px;
   transform: rotate(-3deg);
   bottom: -90px;
   left: 0;
-  background: #fff;
+  background: #d4d4d4;
   right: -10px;
   z-index: 5;
   transition: all 0.2s ease-in;
@@ -184,7 +191,7 @@ svg {
 }
 
 .card__collection .cards--one__rect {
-  color: #fff;
+  color: #d4d4d4;
   text-transform: uppercase;
   font-size: 18px;
   background: #0f9bc0;
@@ -203,7 +210,7 @@ svg {
 
 .card__collection .cards--one__rect--back {
   display: block;
-  background: rgba(34, 65, 154, 0.8);
+  background: #0087ffff;
   width: 126px;
   height: 55px;
   transform: skewY(7deg);
@@ -226,10 +233,10 @@ svg {
 
 .card__collection .cards--two p {
   position: absolute;
-  top: 83%;
+  top: 81%;
   left: -100%;
   text-transform: capitalize;
-  color: #fff;
+  color: #d4d4d4;
   font-size: 20px;
   z-index: 8;
   transition: all 0.6s ease;
@@ -240,7 +247,7 @@ svg {
 }
 
 .card__collection .cards--two:hover img {
-  transform: translateY(-15x);
+  transform: translateY(-15px);
 }
 
 .card__collection .cards--two:hover .cards--two__rect {
@@ -270,7 +277,7 @@ svg {
 .card__collection .cards--two__tri {
   border-top: 220px solid transparent;
   border-bottom: 190px solid transparent;
-  border-right: 288px solid #fff;
+  border-right: 288px solid #d500ffff;
   opacity: 0.9;
   position: absolute;
   display: block;
@@ -282,9 +289,9 @@ svg {
 .card__collection .cards--two__tri:before {
   border-top: 220px solid transparent;
   border-bottom: 190px solid transparent;
-  border-right: 288px solid #57ccfd;
+  border-right: 288px solid #0087ffff;
   position: absolute;
-  content: '';
+  content: "";
   display: block;
   top: -220px;
   right: -612px;
@@ -295,7 +302,7 @@ svg {
 .card__collection .cards--two__rect {
   width: 750px;
   height: 200px;
-  background: #fff;
+  background: #41ff00ff;
   display: block;
   position: absolute;
   top: 175%;
@@ -307,12 +314,12 @@ svg {
 }
 
 .card__collection .cards--two__rect:before {
-  content: '';
+  content: "";
   display: block;
   width: 100%;
   position: relative;
   height: 100%;
-  background: #f07306;
+  background: #ff7e00ff;
   transform: translateY(200px);
   z-index: 2;
   transition: all 0.3s ease-in-out;
@@ -331,7 +338,7 @@ svg {
   display: inline-block;
   font-size: 16px;
   margin: 7px;
-  color: #fff;
+  color: #d4d4d4;
   transition: all 0.2s ease-in-out;
   transform: translateY(100px);
 }
@@ -390,7 +397,7 @@ svg {
 }
 
 .card__collection .cards--three__rect-1 {
-  background: #fff;
+  background: #d4d4d4;
   width: 200px;
   height: 110px;
   transform: skewX(-20deg);
@@ -405,7 +412,7 @@ svg {
 
 .card__collection .cards--three__rect-1 p {
   font-size: 20px;
-  color: #fff;
+  color: #d4d4d4;
   transform: skewX(20deg);
   line-height: 6rem;
 }
@@ -417,9 +424,123 @@ svg {
   display: block;
   position: absolute;
   left: -200%;
-  z-index: 1;
+  z-index: -1;
   transition: all 0.3s ease-in;
 }
+
+.card__collection .cards--three__rect-2 {
+  width: 100px;
+  height: 70px;
+  background: #d4d4d4;
+  position: absolute;
+  top: 65%;
+  left: 1000%;
+  opacity: 0.9;
+  transform: skewX(-20deg);
+  z-index: 8;
+  transition: all 0.5s ease-in;
+}
+
+.card__collection .cards--three__rect-2::before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 40px;
+  background: #0087ffff;
+  opacity: 1;
+  position: absolute;
+  left: 500%;
+  top: 10%;
+  transition: all 0.3s ease-in;
+}
+
+.card__collection .cards--three__rect-2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 40px;
+  background: #9b1308;
+  opacity: 1;
+  position: absolute;
+  left: 500%;
+  top: 114%;
+  transition: all 0.5s ease-in;
+  transition-delay: 0.2s;
+}
+
+.card__collection .cards--three__rect-2 .shadow-2 {
+  background: #0087ffff;
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: -10%;
+  left: 500%;
+  transition: all 0.5s ease-in;
+  transition-delay: 0.2s;
+}
+
+.card__collection .cards--three__circle {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: #d4d4d4;
+  position: absolute;
+  top: -15%;
+  left: 50%;
+  opacity: 0.9;
+  transform: scale(0);
+  transition: all 0.3s ease;
+}
+
+.card__collection .cards--three__circle:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #9b1308;
+  transform: scale(0);
+  transition: all 0.3s ease;
+  transition-delay: 0.2s;
+}
+
+.card__collection .cards--three__list {
+  list-style: none;
+  position: absolute;
+  top: -9px;
+  right: 7px;
+  padding-top: 60px;
+  transition: all 0.4s ease;
+}
+
+.card__collection .cards--three__list li {
+  display: inline-block;
+  margin: 4px;
+  color: #d4d4d4;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: rgba(87, 204, 253, 0.9);
+  text-align: center;
+  line-height: 1.7rem;
+  font-size: 12px;
+  transition: all 0.3s ease;
+  transform: translateX(500%);
+}
+
+.card__collection .cards--three__list li:nth-child(1) {
+  transition-delay: 0.2s;
+}
+
+.card__collection .cards--three__list li:nth-child(2) {
+  transition-delay: 0.3s;
+}
+
+.card__collection .cards--three__list li:nth-child(3) {
+  transition-delay: 0.4s;
+}
+
 
 /*.menu {
   position: absolute;
